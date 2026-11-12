@@ -389,6 +389,19 @@
             "label": "Estado de bloqueo",
             "hint": "Icono de bloqueo de metadatos en la parte superior derecha - naranja cuando está bloqueado, verde cuando está desbloqueado"
           }
+        },
+        "formatBadgeStyle": {
+          "title": "Formatear el estilo de la insignia",
+          "hint": "Como muestra la insignia un libro que tiene varios formatos, un libro con un formato siempre muestra su píldora plana.",
+          "options": {
+            "primary": {
+              "label": "Formato Principal",
+              "hint": "Una píldora con el formato que abre la tarjeta."
+            },
+            "bubble": {
+              "label": "Cuenta de burbuja"
+            }
+          }
         }
       },
       "layout": {
@@ -3401,7 +3414,7 @@
         "pluginStep2Middle": "a",
         "pluginStep2Suffix": "en tu dispositivo.",
         "pluginStep3": "Reinicie KOReader. El servidor y el inicio de sesión se configuran automáticamente.",
-        "pluginStep4Prefix": "Abierto",
+        "pluginStep4Prefix": "Abrir",
         "pluginStep4Suffix": "para buscar, descargar y vincular libros para sincronizar.",
         "stockGuideTitle": "Complemento de sincronización de progreso de stock",
         "stockStep1Prefix": "En su dispositivo KOReader, vaya a",
@@ -3537,7 +3550,8 @@
           "manualUnlinkConfirmBody": "Elimina la vinculación manual con {title} y devuelve este libro a la lista de revisión. Las futuras sincronizaciones utilizarán una coincidencia automática si existe. Las estadísticas que ya se hayan sincronizado permanecerán en su libro actual de BookOrbit.",
           "reviewDismissConfirmBody": "Esto lo elimina de tus libros pendientes de revisión. La coincidencia automática y los datos de sincronización existentes se conservan. Si un dispositivo vuelve a informar del hash sin una coincidencia, puede volver a aparecer.",
           "reviewDismissAllConfirmTitle": "{count, plural, =0 {No hay libros para revisar} one {Descartar todo # libro para revisar?} other {Descartar todos los # libros para revisar?}}",
-          "reviewDismissAllConfirmBody": "Esto vacía por completo tu lista de libros pendientes de revisión, incluidas las entradas de otras páginas. La coincidencia automática y los datos de sincronización existentes se conservan. Si un dispositivo vuelve a informar de un hash sin una coincidencia, puede volver a aparecer."
+          "reviewDismissAllConfirmBody": "Esto vacía por completo tu lista de libros pendientes de revisión, incluidas las entradas de otras páginas. La coincidencia automática y los datos de sincronización existentes se conservan. Si un dispositivo vuelve a informar de un hash sin una coincidencia, puede volver a aparecer.",
+          "openCandidate": "Abrir {title} en una nueva pestaña"
         },
         "remove": "Quitar",
         "removing": "Eliminando...",
@@ -7837,6 +7851,14 @@
       "toast": {
         "success": "{count} libros movidos a {library}",
         "partial": "Movidos {moved} libros, {failed} fallidos"
+      }
+    },
+    "merge": {
+      "fields": {
+        "openLibraryId": "ID de Open Library"
+      },
+      "result": {
+        "openBook": "Abrir libro"
       }
     }
   },
